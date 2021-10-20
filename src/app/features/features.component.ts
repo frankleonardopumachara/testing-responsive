@@ -40,7 +40,7 @@ export class FeaturesComponent implements OnInit {
         {
           title: 'EMPRESA',
           icon: 'shopping-bag-outline',
-          link: '/pages/contacts/empresa'
+          link: '/pages/contacts/company'
         },
         {
           title: 'EMPLEADOS',

@@ -7,25 +7,25 @@ const routes: Routes = [
   {
     path: '',
     component: FeaturesComponent,
-    // children: [
-    //   {
-    //     path: 'dashboard',
-    //     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
-    //   },
-    //   {
-    //     path: 'contacts',
-    //     loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule)
-    //   },
-    //   {
-    //     path: '',
-    //     redirectTo: 'dashboard',
-    //     pathMatch: 'full',
-    //   },
-    //   // {
-    //   //   path: '**',
-    //   //   component: NotFoundComponent,
-    //   // },
-    // ]
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+      },
+      {
+        path: 'contacts',
+        loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule)
+      },
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+      },
+      // {
+      //   path: '**',
+      //   component: NotFoundComponent,
+      // },
+    ]
   },
 ]
 
