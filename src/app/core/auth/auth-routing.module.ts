@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core'
 import {RouterModule, Routes} from '@angular/router'
 import {AuthPageComponent} from './pages/auth-page/auth-page.component'
 import {LoginComponent} from './components/login/login.component'
+import {PasswordRecoverComponent} from './components/password-recover/password-recover.component'
 
 const routes: Routes = [
   {
@@ -12,10 +13,10 @@ const routes: Routes = [
         path: 'login',
         component: LoginComponent,
       },
-      // {
-      //   path: 'request-password',
-      //   component: PasswordRecoverComponent
-      // },
+      {
+        path: 'request-password',
+        component: PasswordRecoverComponent
+      },
       {
         path: '',
         redirectTo: 'login',

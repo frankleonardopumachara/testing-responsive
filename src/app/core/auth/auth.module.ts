@@ -13,13 +13,15 @@ import {
 } from '@nebular/theme'
 import {NbAuthModule} from '@nebular/auth';
 import { LoginComponent } from './components/login/login.component'
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { PasswordRecoverComponent } from './components/password-recover/password-recover.component'
 
 
 @NgModule({
   declarations: [
     AuthPageComponent,
-    LoginComponent
+    LoginComponent,
+    PasswordRecoverComponent,
   ],
   imports: [
     CommonModule,
